@@ -3,4 +3,4 @@ from Pokemon_class import Pokemon
 
 parse = p()
 
-parse.parse_poke()
+parse.parse_poke_user()

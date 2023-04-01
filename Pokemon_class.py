@@ -7,6 +7,7 @@ class Pokemon:
           self.CP = 0
           self.stats = [0, 0, 0] ## [attack, defense, stamina] - max 15
           self.IV = 0
+          self.moveset = []
 
      def get_ID(self):
           return self.pokeid
@@ -51,5 +52,8 @@ class Pokemon:
                self.stats = [attack, defense, stamina]
                self.IV = sum(self.stats)/45*100
           return self.IV
+     
+     def set_moveset(self,moveset):
+          self.moveset = moveset
           
      
