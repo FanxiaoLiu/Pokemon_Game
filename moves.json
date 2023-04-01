@@ -1,0 +1,22 @@
+{
+    "moves": [
+        {
+            "name": "Ember",
+            "id": 1,
+            "damage": 40,
+            "special_effects": [
+
+            ],
+            "type": "fire"
+        },
+        {
+            "name": "Scratch",
+            "id": 2,
+            "damage": 20,
+            "special_effects": [
+
+            ],
+            "type": "normal"
+        }
+    ]
+}
