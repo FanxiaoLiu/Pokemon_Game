@@ -1,0 +1,30 @@
+{
+    "pokemon": [
+        {
+            "ID": 1,
+            "name": "Charmander",
+            "type": "fire",
+            "cp": 2300,
+            "iv": 30,
+            "stats": [10,12,12],
+            "Evos": [
+                {
+                    "ID": 2
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Ember"
+                },
+                {
+                    "id": 2,
+                    "name": "Scratch"
+                }
+            ]
+        }
+    ]
+}
