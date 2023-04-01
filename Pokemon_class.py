@@ -1,11 +1,15 @@
 class Pokemon:
 
-     def __init__(self, name, typ):
+     def __init__(self, name, typ, id):
+          self.pokeid = id
           self.name = name
           self.type = typ
           self.CP = 0
           self.stats = [0, 0, 0] ## [attack, defense, stamina] - max 15
           self.IV = 0
+
+     def get_ID(self):
+          return self.pokeid
 
      def get_name(self):
           return self.name
