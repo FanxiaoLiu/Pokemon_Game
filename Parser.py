@@ -2,26 +2,37 @@ import os
 import json
 from Pokemon_class import Pokemon
 
-def parse():
-    
-    script_dir = os.path.dirname(__file__)
-    rel_path = "poke_txt.json"
-    abs_file_path = os.path.join(script_dir, rel_path)
+class Parser:
 
-    ##Opens JSON file, reads it and creates a pokemon class based on that data
-    poke_arr = []
-    
-    with open(abs_file_path, "r") as f:
-        readfile = json.load(f)
-        for x in readfile["pokemon"]:
+    def __init__(self):
+        script_dir = os.path.dirname(__file__)
+        rel_path = "poke_txt.json"
+        abs_file_path = os.path.join(script_dir, rel_path)
+        self.poke_arr = []
+        self.moves_arr = []
+
+        ##Opens JSON file, initializes and saves it as a JSON object
+        
+        with open(abs_file_path, "r") as f:
+            self.poke_obj = json.load(f)
+
+        rel_path = "moves.json"
+        abs_file_path = os.path.join(script_dir, rel_path)
+
+        with open(abs_file_path, "r") as f:
+            self.moves_obj = json.load(f)
+
+
+    def parse_poke(self):
+        ## Reads the JSON object and gets pokemon data from it
+        for x in self.poke_obj["pokemon"]:
             poke = Pokemon(x["name"],x["type"],x["ID"])
-            poke.set_stats(x["stats"][0],x["stats"][1],x["stats"][2])
-            poke.set_CP(x["cp"])
-            poke_arr.append(poke)
-    
-    for x in poke_arr:
-        print(x.get_ID())
-            
+            self.poke_arr.append(poke)
+        
+        for x in self.poke_arr:
+            print(x.display_details())
 
+    def parse_moves(self):
+        for x in self.moves_obj:
+            pass
 
-parse()
