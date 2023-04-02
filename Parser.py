@@ -34,6 +34,25 @@ class Parser:
 
         self.parse_moves()
 
+        self.parse_poke_user()
+
+        print(self.user_obj)
+
+    def update_user_poke(self):
+        self.user_obj["pokemon"] = []
+        for x in self.user_arr:
+            id = x.pokeid
+            cp = x.CP
+            stats = x.stats
+
+            data = {
+                'poke_id': id,
+                'cp': cp,
+                'stats': stats
+            }
+            self.user_obj["pokemon"].append(data)
+        print(self.user_obj)
+            
 
     def parse_poke(self):
         ## Reads the JSON object and gets pokemon data from it
@@ -66,4 +85,11 @@ class Parser:
         for y in self.poke_arr:
             y.display_details()
 
+    def write_to_file(self):
+        script_dir = os.path.dirname(__file__)
+        rel_path = "user_poke.json"
+        abs_file_path = os.path.join(script_dir, rel_path)
 
+        with open(abs_file_path, "w") as f:
+            json_string = json.dumps(self.user_obj, indent=4)
+            f.write(json_string)
