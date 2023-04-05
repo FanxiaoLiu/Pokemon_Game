@@ -1,5 +1,5 @@
 from multiprocessing import Process as proc
-from Parser import *
+from data.Parser import *
 from Pokemon_class import Pokemon
 import random as rand
 
@@ -200,9 +200,11 @@ def main():
     
     while True:
 
-        wildyesno = int(input("Would you like to proceed to the wild? (1 for yes, 0 for no (0 Would exit the game and save your progress)): "))
+        wildyesno = int(input("Would you like to proceed to the wild? (1 for yes, 0 for no (0 Would exit the game and save your progress), 2 for releasing a Pokemon): "))
 
         if wildyesno == 1:
+            pass
+        if wildyesno == 2:
             pass
         else:
             break
