@@ -103,6 +103,7 @@ class Parser:
                     new_poke = Pokemon(y.name,y.type,y.get_ID())
                     new_poke.set_stats(x["stats"][0],x["stats"][1],x["stats"][2])
                     new_poke.set_CP(x["cp"])
+                    new_poke.set_moveset(y.moveset)
                     self.user_arr.append(new_poke)
 
     def write_to_user_file(self):

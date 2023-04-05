@@ -4,18 +4,14 @@
             "name": "Ember",
             "id": 1,
             "damage": 40,
-            "special_effects": [
-
-            ],
+            "special_effects": "Light Burn",
             "type": "fire"
         },
         {
             "name": "Scratch",
             "id": 2,
             "damage": 20,
-            "special_effects": [
-
-            ],
+            "special_effects": "None",
             "type": "normal"
         }
     ]
