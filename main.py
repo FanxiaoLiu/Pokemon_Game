@@ -200,12 +200,41 @@ def main():
     
     while True:
 
-        wildyesno = int(input("Would you like to proceed to the wild? (1 for yes, 0 for no (0 Would exit the game and save your progress), 2 for releasing a Pokemon): "))
+        wildyesno = int(input("Would you like to proceed to the wild? (1 for yes, 0 for no (0 Would exit the game and save your progress), 2 for releasing a Pokemon, 3 for displaying list of your Pokemon): "))
 
         if wildyesno == 1:
             pass
-        if wildyesno == 2:
-            pass
+        elif wildyesno == 2:
+            print("Your list of available Pokemon:")
+            counter = 1
+            for x in user_poke_data:
+                poke_name = ""
+                for y in all_poke_data:
+                    if x.pokeid == y.pokeid:
+                        poke_name = y.name
+                print(counter, ". Name: ", poke_name, "\tCP: ", x.CP, "\tStats (ATK, DEF, HP): ", x.stats)
+                counter += 1
+            release_choice = int(input("Which pokemon would you like to release? (Please input the number): "))
+            print("Name: ", all_data.user_arr[release_choice-1].name, "\tCP: ", all_data.user_arr[release_choice-1].CP, "\tStats (ATK, DEF, HP): ", all_data.user_arr[release_choice-1].stats)
+            confirm = input("Are you sure you want to release this pokemon? (y/n)")
+            if confirm == "y":
+                poke_release = all_data.user_arr.pop(release_choice-1)
+                print("You have successfully released the pokemon!")
+            elif confirm == "n":
+                print("You have not released the pokemon!")
+            all_data.update_user_poke()
+            continue
+        elif wildyesno == 3:
+            print("Your list of available Pokemon:")
+            counter = 1
+            for x in user_poke_data:
+                poke_name = ""
+                for y in all_poke_data:
+                    if x.pokeid == y.pokeid:
+                        poke_name = y.name
+                print(counter, ". Name: ", poke_name, "\tCP: ", x.CP, "\tStats (ATK, DEF, HP): ", x.stats)
+                counter += 1
+            continue
         else:
             break
 
