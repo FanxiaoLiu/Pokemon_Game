@@ -5,7 +5,7 @@ class Pokemon:
           self.name = name
           self.type = typ
           self.CP = 0
-          self.stats = [0, 0, 0] ## [attack, defense, stamina] - max 15
+          self.stats = [0, 0, 0] ## [attack, defense, hp] - max 15
           self.IV = 0
           self.moveset = []
 

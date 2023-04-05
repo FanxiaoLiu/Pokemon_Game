@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Franky",
+            "level": 1,
+            "pokeballs": 10
+        }
+    ]
+}

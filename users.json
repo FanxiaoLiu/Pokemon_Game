@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Franky",
+            "lvl": 1,
+            "pokeballs": 7
+        },
+        {
+            "id": 2,
+            "name": "Yousif",
+            "lvl": 1,
+            "pokeballs": 0
+        }
+    ]
+}
