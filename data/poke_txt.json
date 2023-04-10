@@ -43,6 +43,213 @@
                 {
                     "id": 2,
                     "name": "Scratch"
+                    }
+            ]
+        },
+        {
+            "ID": 3,
+            "name": "Charizard",
+            "type": "fire",
+            "Evos": [
+                {
+                    "ID": 3
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Flamethrower"
+                },
+                {
+                    "id": 2,
+                    "name": "Fire Spin"
+                    }
+            ]
+        },
+        {
+            "ID": 4,
+            "name": "Bulbasaur",
+            "type": "grass",
+            "Evos": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Vine Whip"
+                },
+                {
+                    "id": 2,
+                    "name": "Power Whip"
+                    }
+            ]
+        },
+        {
+            "ID": 5,
+            "name": "Ivysaur",
+            "type": "grass",
+            "Evos": [
+                {
+                    "ID": 2
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Power Whip"
+                },
+                {
+                    "id": 2,
+                    "name": "Solar Beam"
+                    }
+            ]
+        },
+        {
+            "ID": 6,
+            "name": "Venusaur",
+            "type": "grass",
+            "Evos": [
+                {
+                    "ID": 3
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Grass Knot"
+                },
+                {
+                    "id": 2,
+                    "name": "Solar Beam"
+                    }
+            ]
+        },
+        {
+            "ID": 7,
+            "name": "Squirtle",
+            "type": "water",
+            "Evos": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Bubble"
+                },
+                {
+                    "id": 2,
+                    "name": "Water Gun"
+                    }
+            ]
+        },
+        {
+            "ID": 8,
+            "name": "Wartortle",
+            "type": "water",
+            "Evos": [
+                {
+                    "ID": 2
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Water Gun"
+                },
+                {
+                    "id": 2,
+                    "name": "Water Pulse"
+                    }
+            ]
+        },
+        {
+            "ID": 9,
+            "name": "Blastoise",
+            "type": "water",
+            "Evos": [
+                {
+                    "ID": 3
+                },
+                {
+                    "ID": 3
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Water Pulse"
+                },
+                {
+                    "id": 2,
+                    "name": "Hydro Pump"
+                    }
+            ]
+        },
+        {
+            "ID": 10,
+            "name": "Pikachu",
+            "type": "electric",
+            "Evos": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Volt Switch"
+                },
+                {
+                    "id": 2,
+                    "name": "Thunder"
+                    }
+            ]
+        },
+        {
+            "ID": 11,
+            "name": "Raichu",
+            "type": "electric",
+            "Evos": [
+                {
+                    "ID": 2
+                },
+                {
+                    "ID": 2
+                }
+            ],
+            "Moveset": [
+                {
+                    "id": 1,
+                    "name": "Thunder Bolt"
+                },
+                {
+                    "id": 2,
+                    "name": "Tackle"
                 }
             ]
         }
